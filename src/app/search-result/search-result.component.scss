@@ -3,14 +3,12 @@ h2{
     margin-bottom: 0;;
 }
 
-.mat-paginator-range-actions {
-    .mat-icon-button {
-        span{
-            svg {
-                transform: rotate(180deg); //בעברית החיצים צריכים להיות הפוך
-            }
-        }
-    }
+::ng-deep .mat-paginator-range-actions .mat-icon-button svg {
+
+    transform: rotate(
+    180deg
+    
+    );
 }
 
 .mat-paginator{
