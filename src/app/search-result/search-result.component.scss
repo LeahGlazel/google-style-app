@@ -1,0 +1,14 @@
+h2{
+    color: blue;
+    margin-bottom: 0;;
+}
+
+.mat-paginator-range-actions {
+    .mat-icon-button {
+        span{
+            svg {
+                transform: rotate(180deg); //בעברית החיצים צריכים להיות הפוך
+            }
+        }
+    }
+}

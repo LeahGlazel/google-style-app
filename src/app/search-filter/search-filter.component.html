@@ -1,0 +1,15 @@
+<form class="example-form" [formGroup]="searchFrm">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>שלום, מה ברצונך לחפש?</mat-label>
+        <input matInput type="text" formControlName="searchText">
+        <button matSuffix mat-icon-button aria-label="search" (click)="search()"
+            matTooltip="חיפוש">
+            <mat-icon>search</mat-icon>
+          </button>
+
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="reset()"
+        matTooltip="איפוס">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+</form>

@@ -1,0 +1,13 @@
+<div *ngIf="dataList">
+    <h3 *ngIf="countData">נמצאו {{countData}} תוצאות</h3>
+    <ng-container *ngFor="let d of dataList">
+        <h2>{{d.title}}</h2>
+        <div [innerHTML]="d.text"></div>
+    <br>
+    </ng-container>
+
+    <mat-paginator [length]="countData"
+               [pageSize]="10"
+               (page)="changePage($event)" showFirstLastButtons hidePageSize>
+</mat-paginator>
+</div>

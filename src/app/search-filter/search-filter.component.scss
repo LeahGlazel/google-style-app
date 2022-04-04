@@ -1,0 +1,17 @@
+  .example-full-width {
+    width: 50%;
+  }
+
+  @media (max-width: 1000px) {
+    .example-full-width {
+        width: 100%;
+      }
+  }
+
+  mat-form-field {
+    text-align: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
